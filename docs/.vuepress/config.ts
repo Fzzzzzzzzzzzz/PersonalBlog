@@ -18,94 +18,91 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: "Evan's blog",
-      description: 'web前端技术博客,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,python,css3,html5,Node,git,github等技术文章。',
+      title: "Fzzzzzzzzzzzz",
+      description: 'Java后端博客',
     }
   },
-  // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
+  // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
+  // base: '/',
 
   // 主题配置
   themeConfig: {
     // 导航配置
     nav: [
       { text: '首页', link: '/' },
+      // {
+      //   text: '前端',
+      //   link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+      //   items: [
+      //     // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
+      //     {
+      //       text: '前端文章',
+      //       items: [
+      //         { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
+      //       ],
+      //     },
+      //     {
+      //       text: '学习笔记',
+      //       items: [
+      //         { text: '《JavaScript教程》', link: '/note/javascript/' },
+      //         { text: '《JavaScript高级程序设计》', link: '/note/js/' },
+      //         { text: '《ES6 教程》', link: '/note/es6/' },
+      //         { text: '《Vue》', link: '/note/vue/' },
+      //         { text: '《React》', link: '/note/react/' },
+      //         {
+      //           text: '《TypeScript 从零实现 axios》',
+      //           link: '/note/typescript-axios/',
+      //         },
+      //         {
+      //           text: '《Git》',
+      //           link: '/note/git/',
+      //         },
+      //         {
+      //           text: 'TypeScript',
+      //           link: '/pages/51afd6/',
+      //         },
+      //         {
+      //           text: 'JS设计模式总结',
+      //           link: '/pages/4643cd/',
+      //         },
+      //       ],
+      //     },
+      //   ],
+      // },
       {
-        text: '前端',
+        text: '后端',
         link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
-          {
-            text: '前端文章',
-            items: [
-              { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
-            ],
-          },
-          {
-            text: '学习笔记',
-            items: [
-              { text: '《JavaScript教程》', link: '/note/javascript/' },
-              { text: '《JavaScript高级程序设计》', link: '/note/js/' },
-              { text: '《ES6 教程》', link: '/note/es6/' },
-              { text: '《Vue》', link: '/note/vue/' },
-              { text: '《React》', link: '/note/react/' },
-              {
-                text: '《TypeScript 从零实现 axios》',
-                link: '/note/typescript-axios/',
-              },
-              {
-                text: '《Git》',
-                link: '/note/git/',
-              },
-              {
-                text: 'TypeScript',
-                link: '/pages/51afd6/',
-              },
-              {
-                text: 'JS设计模式总结',
-                link: '/pages/4643cd/',
-              },
-            ],
-          },
+          { text: 'Mysql', link: '/mysql/' },
+          { text: 'Redis', link: '/redis/' },
+          { text: 'JVM', link: '/jvm/' },
         ],
       },
       {
-        text: '页面',
-        link: '/ui/',
+        text: '开源经历',
+
         items: [
-          { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
-          { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
+          { text: '开源项目', link: 'https://gitee.com/OS-Zero/deliver' },
+          { text: '开源官网', link: 'https://oszero.cn/' },
         ],
       },
       {
-        text: '技术',
-        link: '/technology/',
+        text: '美好生活',
+
         items: [
-          { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
-          { text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/' },
-          { text: 'Nodejs', link: '/pages/117708e0af7f0bd9/' },
-          { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
+          { text: 'B站主页', link: 'https://space.bilibili.com/669595014' },
+          { text: '摄影', link: '/pages/c4c47c/' },
+
         ],
       },
-      {
-        text: '更多',
-        link: '/more/',
-        items: [
-          { text: '学习', link: '/pages/f2a556/' },
-          { text: '面试', link: '/pages/aea6571b7a8bae86/' },
-          { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
-          { text: '实用技巧', link: '/pages/baaa02/' },
-          { text: '友情链接', link: '/friends/' },
-        ],
-      },
-      { text: '关于', link: '/about/' },
       {
         text: '收藏',
-        link: '/pages/beb6c0bd8a66cea6/',
-        // items: [
-        //   { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
-        //   { text: '资源', link: '/pages/eee83a9211a70f9d/' },
-        //   { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
-        // ],
+
+        items: [
+          { text: '网站', link: '/pages/327cef/' },
+          { text: '资源', link: '/pages/1ef958/' },
+        ],
       },
       {
         text: '索引',
@@ -118,8 +115,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-    logo: '/img/logo.png', // 导航栏logo
-    repo: 'xugaoyi/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
+    //左边头像
+    logo: '/img/WeChatAverage.jpg', // 导航栏logo
+    repo: '/Fzzzzzzzzzzzz', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
@@ -136,30 +134,34 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // pageStyle: 'line', // 页面风格，可选值：'card'卡片 | 'line' 线（未设置bodyBgImg时才生效）， 默认'card'。 说明：card时背景显示灰色衬托出卡片样式，line时背景显示纯色，并且部分模块带线条边框
 
-    // bodyBgImg: [
-    //   'https://jsd.cdn.zzko.cn/gh/xugaoyi/image_store/blog/20200507175828.jpeg',
-    //   'https://jsd.cdn.zzko.cn/gh/xugaoyi/image_store/blog/20200507175845.jpeg',
-    //   'https://jsd.cdn.zzko.cn/gh/xugaoyi/image_store/blog/20200507175846.jpeg'
-    // ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
-    // bodyBgImgOpacity: 0.5, // body背景图透明度，选值 0.1~1.0, 默认0.5
-    // bodyBgImgInterval: 15, // body多张背景图时的切换间隔, 默认15，单位s
+    //主页的背景图轮播图
+    bodyBgImg: [
+      'https://xqf0313.oss-rg-china-mainland.aliyuncs.com/%E5%8D%9A%E5%AE%A2%E8%83%8C%E6%99%AF%E5%8A%A8%E6%BC%AB1.jpeg',
+      'https://xqf0313.oss-rg-china-mainland.aliyuncs.com/%E5%8D%9A%E5%AE%A2%E8%83%8C%E6%99%AF%E5%8A%A8%E6%BC%AB2.jpeg',
+      'https://xqf0313.oss-rg-china-mainland.aliyuncs.com/%E5%8D%9A%E5%AE%A2%E8%83%8C%E6%99%AF%E5%8A%A8%E6%BC%AB3.jpg',
+      'https://xqf0313.oss-rg-china-mainland.aliyuncs.com/%E5%8D%9A%E5%AE%A2%E8%83%8C%E6%99%AF%E5%8A%A8%E6%BC%AB4.jpg',
+      'https://xqf0313.oss-rg-china-mainland.aliyuncs.com/%E5%8D%9A%E5%AE%A2%E8%83%8C%E6%99%AF%E5%8A%A8%E6%BC%AB5.jpg',
+      'https://xqf0313.oss-rg-china-mainland.aliyuncs.com/%E5%8D%9A%E5%AE%A2%E8%83%8C%E6%99%AF%E5%8A%A8%E6%BC%AB6.jpeg'
+    ], // body背景大图，默认无。 单张图片 String | 多张图片 Array, 多张图片时隔bodyBgImgInterval切换一张。
+    bodyBgImgOpacity: 0.6, // body背景图透明度，选值 0.1~1.0, 默认0.5
+    bodyBgImgInterval: 13, // body多张背景图时的切换间隔, 默认15，单位s
     // titleBadge: false, // 文章标题前的图标是否显示，默认true
     // titleBadgeIcons: [ // 文章标题前图标的地址，默认主题内置图标
     //   '图标地址1',
     //   '图标地址2'
     // ],
-    // contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
+    contentBgStyle: 1, // 文章内容块的背景风格，默认无. 1 方格 | 2 横线 | 3 竖线 | 4 左斜线 | 5 右斜线 | 6 点状
 
-    // updateBar: { // 最近更新栏
-    //   showToArticle: true, // 显示到文章页底部，默认true
-    //   moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
-    // },
-    // rightMenuBar: false, // 是否显示右侧文章大纲栏，默认true (屏宽小于1300px下无论如何都不显示)
-    // sidebarOpen: false, // 初始状态是否打开左侧边栏，默认true
-    // pageButton: false, // 是否显示快捷翻页按钮，默认true
+    updateBar: { // 最近更新栏
+      showToArticle: true, // 显示到文章页底部，默认true
+      moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
+    },
+    rightMenuBar: true, // 是否显示右侧文章大纲栏，默认true (屏宽小于1300px下无论如何都不显示)
+    sidebarOpen: true, // 初始状态是否打开左侧边栏，默认true
+    pageButton: true, // 是否显示快捷翻页按钮，默认true
 
     // 默认外观模式（用户未在页面手动修改过模式时才生效，否则以用户设置的模式为准），可选：'auto' | 'light' | 'dark' | 'read'，默认'auto'。
-    // defaultMode: 'auto',
+    defaultMode: 'auto',
 
     // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | <自定义>    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
     sidebar: 'structuring',
@@ -172,9 +174,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: 'https://jsd.cdn.zzko.cn/gh/xugaoyi/image_store/blog/20200103123203.jpg',
-      name: 'Evan Xu',
-      slogan: '前端界的小学生',
+      avatar: 'https://xqf0313.oss-rg-china-mainland.aliyuncs.com/WeChatAverage.JPG',
+      name: 'Fzzzzzzzzzzzz | 峰子',
+      slogan: '拥抱变化 永远积极向上',
     },
 
     // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
@@ -184,17 +186,17 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         {
           iconClass: 'icon-youjian',
           title: '发邮件',
-          link: 'mailto:894072666@qq.com',
+          link: 'mailto:1771683922@qq.com',
         },
         {
           iconClass: 'icon-github',
           title: 'GitHub',
-          link: 'https://github.com/xugaoyi',
+          link: 'https://github.com/Fzzzzzzzzzzzz',
         },
         {
-          iconClass: 'icon-erji',
-          title: '听音乐',
-          link: 'https://music.163.com/#/playlist?id=755597173',
+          iconClass: 'icon-gitee',
+          title: 'Gitee',
+          link: 'https://gitee.com/xu-qifeng/projects',
         },
       ],
     },
@@ -203,7 +205,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     footer: {
       createYear: 2019, // 博客创建年份
       copyrightInfo:
-        'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a> | <a href="http://beian.miit.gov.cn/" target="_blank">桂ICP备2024034950号</a> | <img src="/img/beian.png" style="width: 15px; margin-bottom: -3px;" /> <a href="https://beian.mps.gov.cn/#/query/webSearch?code=45142202000030" rel="noreferrer" target="_blank">桂公网安备45142202000030</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
+          'Fzzzzzzzzzzzz | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
     },
 
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
@@ -220,7 +222,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
   // 注入到页面<head>中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
   head: [
-    ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
+    ['link', { rel: 'icon', href: '/img/WeChatAverage.ico' }], //favicons，资源放在public文件夹
     [
       'meta',
       {
